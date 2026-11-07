@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faisal L. Mohammad | Portfolio</title>
-    <!-- Importing Poppins Font from Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -13,153 +12,137 @@
     <nav class="navbar">
         <div class="logo">FLM.</div>
         <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="contact.html">Contact</a></li> 
+            <li><a href="index.html" style="color: var(--primary-orange);">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 
-    <!-- HERO SECTION -->
-    <section id="hero" class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm <span class="highlight">Faisal L. Mohammad</span></h1>
-            <h2>Computer Science Student & Aspiring Video Editor and Game Developer</h2>
-            <p>I’m passionate about developing software applications and exploring how technology can solve real-world problems. My interests include Game development and software engineering. I’m also continuously developing my creative skills in video editing and digital media production.</p>
-            <a href="#projects" class="btn">View My Work</a>
+    <!-- HERO SECTION (HOME) -->
+    <section class="section" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 40px; padding-top: 40px;">
+        <div style="flex: 1; min-width: 300px;">
+            <h1 style="font-size: 3.2rem; color: var(--primary-orange); line-height: 1.2; margin-bottom: 20px;">
+                Hi, I'm Faisal L. Mohammad
+            </h1>
+            <p style="font-size: 1.3rem; color: var(--brown); font-weight: 700; margin-bottom: 20px;">
+                Computer Science Student & Aspiring Video Editor and Game Developer
+            </p>
+            <p style="font-size: 1.05rem; line-height: 1.6; color: var(--black); margin-bottom: 30px;">
+                I'm passionate about developing software applications and exploring how technology can solve real-world problems. My interests include game development and software engineering. I'm also continuously developing my creative skills in video editing and digital media production.
+            </p>
+            <a href="projects.html" class="project-link" style="display: inline-block; padding: 12px 30px; background-color: var(--primary-orange); color: var(--white); border-radius: 8px; text-decoration: none; font-weight: 700;">View My Work</a>
         </div>
-        <div class="hero-image">
-            <!-- Replace the src with your actual image path or URL -->
-            <img src="6303190984984040813.jpg" alt="Faisal L. Mohammad">
+        <div style="flex: 1; min-width: 280px; text-align: center;">
+            <img src="your-photo.jpg" alt="Faisal L. Mohammad" style="width: 280px; height: 280px; border-radius: 50%; object-fit: cover; border: 5px solid var(--light-orange); box-shadow: 0 10px 30px rgba(139, 83, 18, 0.15);">
         </div>
     </section>
 
-<!-- ADVERTISEMENT SECTION -->
-    <section id="advertisement" class="section bg-light">
+    <!-- VIDEO REEL PREVIEW -->
+    <section class="section" style="text-align: center; background-color: var(--bg-light);">
         <h2 class="section-title">My Video Editing Reel</h2>
-        <div style="text-align: center; max-width: 800px; margin: 0 auto; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(139, 83, 18, 0.15); border: 6px solid var(--white);">
-            <iframe width="100%" height="450" src="https://www.youtube.com/embed/B8RIspsbFXc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>    </section>
+        <div style="max-width: 800px; margin: 0 auto;">
+            <iframe width="100%" height="450" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" title="Video Editing Reel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen style="border-radius: 16px; border: 2px solid var(--light-orange);"></iframe>
         </div>
     </section>
-    
-<!-- ABOUT SECTION -->
-    <section id="about" class="section">
+
+    <!-- ABOUT PREVIEW -->
+    <section class="section">
         <h2 class="section-title">About Me</h2>
         <div style="max-width: 800px; margin: 0 auto; text-align: center;">
-            <p style="font-size: 1.15rem; line-height: 1.8; color: var(--black); margin-bottom: 20px;">
+            <p style="font-size: 1.15rem; line-height: 1.8; color: var(--black); margin-bottom: 25px;">
                 Hello! I'm <strong>Faisal L. Mohammad</strong>, a dedicated third-year Bachelor of Science in Computer Science student at <strong>City College of Calamba</strong>. I have a strong passion for exploring technology, building functional web applications, and understanding how software systems solve real-world problems.
             </p>
-            <p style="font-size: 1.05rem; line-height: 1.8; color: var(--black); margin-bottom: 20px;">
-                Beyond academics, I operate a freelance video editing service where I handle promotional video creation, clip editing, and motion graphics. I also enjoy practical development using open-source tools—ranging from game design in Godot to deploying web projects via GitHub Actions.
-            </p>
-            <p style="font-size: 1.05rem; line-height: 1.8; color: var(--black);">
-                Whether I'm writing code, editing digital media, or training in calisthenics, I believe in steady progress, continuous learning, and discipline. My goal is to build a meaningful career in technology and create digital experiences that truly matter.
-            </p>
+            <a href="about.html" class="project-link" style="display: inline-block; padding: 10px 25px; background-color: var(--primary-orange); color: var(--white); border-radius: 8px; text-decoration: none; font-weight: 700;">Read More About Me</a>
         </div>
     </section>
 
-    <!-- SKILLS SECTION -->
-    <section id="skills" class="section bg-light">
+    <!-- SKILLS PREVIEW -->
+    <section class="section" style="background-color: var(--bg-light);">
         <h2 class="section-title">My Toolkit</h2>
-        <div class="skills-grid">
+        <div class="skills-grid" style="margin-bottom: 30px;">
             <div class="skill-card">
-                <h3>Development & AI</h3>
+                <h3 style="color: var(--primary-orange); margin-bottom: 10px;">Development & AI</h3>
                 <p>Python, YOLOv11, HTML/CSS/JS, Orange Data Mining, GitHub Actions (CI/CD)</p>
             </div>
             <div class="skill-card">
-                <h3>Game Engine & Logic</h3>
+                <h3 style="color: var(--primary-orange); margin-bottom: 10px;">Game Engine & Logic</h3>
                 <p>Godot Engine, GDScript</p>
             </div>
             <div class="skill-card">
-                <h3>Design & Video</h3>
+                <h3 style="color: var(--primary-orange); margin-bottom: 10px;">Design & Video</h3>
                 <p>Adobe Illustrator, CorelDraw, GIMP, Video Editing, Motion Graphics</p>
             </div>
         </div>
+        <div style="text-align: center;">
+            <a href="skills.html" class="project-link" style="display: inline-block; padding: 10px 25px; background-color: var(--primary-orange); color: var(--white); border-radius: 8px; text-decoration: none; font-weight: 700;">View All Skills</a>
+        </div>
     </section>
 
-<!-- EDUCATION & CERTIFICATIONS SECTION -->
-    <section id="education" class="section">
-        <h2 class="section-title">Education & Certifications</h2>
-        
-        <div style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-            
-            <!-- Category 1: Formal Education -->
-            <h3 style="color: var(--brown); margin-bottom: 20px; font-size: 1.5rem;">Formal Education</h3>
-            <div class="skills-grid" style="margin-bottom: 40px;">
+    <!-- EDUCATION PREVIEW -->
+    <section class="section">
+        <h2 class="section-title">Education & Credentials</h2>
+        <div style="max-width: 1200px; margin: 0 auto; margin-bottom: 30px;">
+            <div class="skills-grid">
                 <div class="skill-card">
                     <span class="badge" style="display: inline-block; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; background-color: var(--bg-light); color: var(--brown); margin-bottom: 10px; border: 1px solid var(--light-orange);">In Progress</span>
-                    <h3>Bachelor of Science in Computer Science</h3>
+                    <h3 style="color: var(--primary-orange); font-size: 1.3rem;">Bachelor of Science in Computer Science</h3>
                     <p style="color: var(--brown); font-weight: 600; margin-bottom: 10px;">City College of Calamba, Philippines</p>
                     <p>Currently in my third year (2026–2027). Focused on software engineering, data mining, operating systems, and AI application development.</p>
                 </div>
-            </div>
-
-            <!-- Category 2: Certifications & Training -->
-            <h3 style="color: var(--brown); margin-bottom: 20px; font-size: 1.5rem;">Certifications & Training</h3>
-            <div class="skills-grid">
-                <!-- Cert 1: TESDA Mechatronics -->
                 <div class="skill-card">
                     <span class="badge" style="display: inline-block; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; background-color: #e6f4ea; color: #137333; margin-bottom: 10px; border: 1px solid #ceead6;">NC II Passer</span>
-                    <h3>Mechatronics Servicing</h3>
-                    <p style="color: var(--brown); font-weight: 600; margin-bottom: 10px;">Technical Education and Skills Development Authority (TESDA)</p>
+                    <h3 style="color: var(--primary-orange); font-size: 1.3rem;">Mechatronics Servicing</h3>
+                    <p style="color: var(--brown); font-weight: 600; margin-bottom: 10px;">TESDA</p>
                     <p>Completed and passed the Mechatronics Servicing NC II national certification, demonstrating technical proficiency in automation and hardware systems.</p>
                 </div>
-
-                <!-- Cert 2: Wadhwani -->
-                <div class="skill-card">
-                    <span class="badge" style="display: inline-block; padding: 4px 10px; font-size: 0.75rem; font-weight: 700; border-radius: 20px; background-color: #e8f0fe; color: #1967d2; margin-bottom: 10px; border: 1px solid #d2e3fc;">Completed</span>
-                    <h3>Professional & Interpersonal Skills</h3>
-                    <p style="color: var(--brown); font-weight: 600; margin-bottom: 10px;">Wadhwani Skilling</p>
-                    <p>Completed comprehensive professional training focusing on workplace communication, professional etiquette, and interpersonal skills. (November 2024)</p>
-                </div>
             </div>
-
+        </div>
+        <div style="text-align: center;">
+            <a href="education.html" class="project-link" style="display: inline-block; padding: 10px 25px; background-color: var(--primary-orange); color: var(--white); border-radius: 8px; text-decoration: none; font-weight: 700;">View All Education & Certifications</a>
         </div>
     </section>
 
-<!-- PROJECTS SECTION -->
-    <section id="projects" class="section bg-light">
+    <!-- FEATURED PROJECTS PREVIEW -->
+    <section class="section" style="background-color: var(--bg-light);">
         <h2 class="section-title">Featured Projects</h2>
-        <div class="projects-grid">
+        <div class="projects-grid" style="margin-bottom: 30px;">
             <div class="project-card">
-            <!-- Project 1: FeliVet Insight  Application -->
                 <h3>Felivet Insight</h3>
-                <p>An AI-powered mobile application designed to detect feline skin diseases (ringworm, scabies, flea allergy dermatitis) utilizing YOLOv11 with triage classification.</p>
+                <p>An AI-powered mobile application designed to detect feline skin diseases utilizing YOLOv11 with triage classification.</p>
                 <a href="felivet.html" class="project-link">Read Case Study</a>
             </div>
-            <!-- Project 2: Personal Magazine -->
             <div class="project-card">
                 <h3>Personal Growth Magazine</h3>
-                <p>A self-authored digital editorial magazine documenting my journey as a Computer Science student. It explores my core interests in technology, fitness discipline, and self-improvement while showcasing my graphic design and layout skills.</p>
+                <p>A self-authored digital editorial magazine documenting my journey as a Computer Science student.</p>
                 <a href="magazine.html" class="project-link">Read Case Study</a>
             </div>
-            <!-- Project 3: SQA Inspection Report -->
             <div class="project-card">
                 <h3>Software Quality Assurance Report</h3>
-                <p>An evidence-based SQA inspection analyzing authentication logic, data integrity, and mobile responsiveness of the Brew Haven Café web app, including complete code reworks.</p>
+                <p>An evidence-based SQA inspection analyzing authentication logic and data integrity of the Brew Haven Café web app.</p>
                 <a href="sqa-report.html" class="project-link">Read Case Study</a>
             </div>
-            <!-- Project 4: Orange Data Mining Analysis -->
-            <div class="project-card">
-                <h3>Student Attrition & Stress Analysis</h3>
-                <p>An exploratory data mining workflow built in Orange analyzing student performance, attendance, study hours, and stress index as predictors of academic dropouts.</p>
-                <a href="orange-analysis.html" class="project-link">Read Case Study</a>
-            </div>
+        </div>
+        <div style="text-align: center;">
+            <a href="projects.html" class="project-link" style="display: inline-block; padding: 10px 25px; background-color: var(--primary-orange); color: var(--white); border-radius: 8px; text-decoration: none; font-weight: 700;">View All Projects</a>
         </div>
     </section>
 
-<footer>
+    <!-- FOOTER -->
+    <footer>
         <div class="footer-left">
             <h3>Faisal L. Mohammad</h3>
             <p>Computer Science Student · City College of Calamba, Philippines</p>
             <p class="copyright">&copy; 2026 Faisal L. Mohammad. Built with HTML, CSS and vanilla JavaScript.</p>
         </div>
         <ul class="footer-links">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#skills">Skills</a></li>
-            <li><a href="index.html#education">Education</a></li>            
-            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="projects.html">Projects</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </footer>
