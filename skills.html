@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills | Faisal L. Mohammad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .skills-hero {
+            padding: 60px 10% 40px 10%;
+        }
+        .skills-subtitle {
+            font-size: 0.9rem;
+            color: var(--brown);
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .skills-subtitle::before {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary-orange);
+        }
+        .skills-hero h1 {
+            color: var(--primary-orange);
+            font-size: 3rem;
+            margin-bottom: 15px;
+            max-width: 800px;
+            line-height: 1.2;
+        }
+        .skills-hero p {
+            color: var(--black);
+            font-size: 1.1rem;
+            max-width: 700px;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+        .skills-container {
+            padding: 0 10% 60px 10%;
+        }
+        .section-category-title {
+            font-size: 0.9rem;
+            color: var(--brown);
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .section-category-title::before {
+            content: "";
+            display: inline-block;
+            width: 20px;
+            height: 3px;
+            background-color: var(--primary-orange);
+        }
+        .section-heading {
+            color: var(--primary-orange);
+            font-size: 2.2rem;
+            margin-bottom: 30px;
+        }
+        .skills-grid-page {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+        .skill-detail-card {
+            background: var(--white);
+            padding: 35px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .skill-detail-card h3 {
+            color: var(--black);
+            font-size: 1.5rem;
+            margin-bottom: 12px;
+        }
+        .skill-detail-card p {
+            color: var(--black);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+        .badge-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+        .badge-tag {
+            background-color: var(--bg-light);
+            color: var(--brown);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            border: 1px solid var(--light-orange);
+        }
+        .in-progress-section {
+            padding: 0 10% 80px 10%;
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">FLM.</div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html" style="color: var(--primary-orange);">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- SKILLS HERO -->
+    <section class="skills-hero">
+        <div class="skills-subtitle">Skills</div>
+        <h1>What I've practiced, and what I'm still learning.</h1>
+        <p>My skills come from academic coursework in computer science, software engineering projects, laboratory activities, and independent creative work.</p>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <div class="skills-container">
+        <div class="section-category-title">Technical</div>
+        <h2 class="section-heading">Technical skills</h2>
+
+        <div class="skills-grid-page">
+            
+            <!-- Card 1: Development & AI -->
+            <div class="skill-detail-card">
+                <div>
+                    <h3>Development & AI</h3>
+                    <p>Applied through software development coursework, machine learning evaluations, and full-stack web applications.</p>
+                </div>
+                <div class="badge-tags">
+                    <span class="badge-tag">Python</span>
+                    <span class="badge-tag">YOLOv11</span>
+                    <span class="badge-tag">HTML5 / CSS3</span>
+                    <span class="badge-tag">JavaScript</span>
+                    <span class="badge-tag">Orange Data Mining</span>
+                    <span class="badge-tag">GitHub Actions (CI/CD)</span>
+                </div>
+            </div>
+
+            <!-- Card 2: Game Engine & Logic -->
+            <div class="skill-detail-card">
+                <div>
+                    <h3>Game Engine & Logic</h3>
+                    <p>Utilized for academic 2D simulation projects and interactive system logic design.</p>
+                </div>
+                <div class="badge-tags">
+                    <span class="badge-tag">Godot Engine</span>
+                    <span class="badge-tag">GDScript</span>
+                    <span class="badge-tag">CPU Scheduling Simulation</span>
+                </div>
+            </div>
+
+            <!-- Card 3: Design & Video Editing -->
+            <div class="skill-detail-card">
+                <div>
+                    <h3>Design & Video Editing</h3>
+                    <p>Practiced through professional freelance video editing services, editorial magazine layouts, and digital graphic design.</p>
+                </div>
+                <div class="badge-tags">
+                    <span class="badge-tag">Adobe Illustrator</span>
+                    <span class="badge-tag">CorelDraw</span>
+                    <span class="badge-tag">GIMP</span>
+                    <span class="badge-tag">Motion Graphics</span>
+                    <span class="badge-tag">Digital Video Production</span>
+                </div>
+            </div>
+
+            <!-- Card 4: Hardware & IT Support -->
+            <div class="skill-detail-card">
+                <div>
+                    <h3>Hardware & IT Support</h3>
+                    <p>Gained through TESDA Mechatronics Servicing training and Cisco Networking fundamentals.</p>
+                </div>
+                <div class="badge-tags">
+                    <span class="badge-tag">Computer Systems Servicing</span>
+                    <span class="badge-tag">Hardware Troubleshooting</span>
+                    <span class="badge-tag">Cisco Networking Basics</span>
+                    <span class="badge-tag">Cybersecurity Fundamentals</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CURRENTLY DEVELOPING SECTION -->
+    <div class="in-progress-section">
+        <div class="section-category-title">In Progress</div>
+        <h2 class="section-heading">Currently developing</h2>
+        <div class="badge-tags" style="gap: 12px;">
+            <span class="badge-tag" style="padding: 10px 18px; font-size: 0.95rem;">Advanced AI Model Optimization</span>
+            <span class="badge-tag" style="padding: 10px 18px; font-size: 0.95rem;">Full-Stack Mobile App Deployment</span>
+            <span class="badge-tag" style="padding: 10px 18px; font-size: 0.95rem;">Advanced Motion Graphics</span>
+            <span class="badge-tag" style="padding: 10px 18px; font-size: 0.95rem;">Network Security & Administration</span>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-left">
+            <h3>Faisal L. Mohammad</h3>
+            <p>Computer Science Student · City College of Calamba, Philippines</p>
+            <p class="copyright">&copy; 2026 Faisal L. Mohammad. Built with HTML, CSS and vanilla JavaScript.</p>
+        </div>
+        <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
