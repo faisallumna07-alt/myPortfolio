@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Growth Magazine | Faisal L. Mohammad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-header {
+            background-color: var(--bg-light);
+            padding: 60px 10%;
+            text-align: center;
+            border-bottom: 4px solid var(--light-orange);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 15px;
+        }
+        .project-header h1 {
+            color: var(--primary-orange);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .project-container {
+            display: flex;
+            gap: 50px;
+            padding: 60px 10%;
+            flex-wrap: wrap;
+        }
+        .project-main {
+            flex: 2;
+            min-width: 300px;
+        }
+        .project-main h2 {
+            color: var(--brown);
+            margin: 30px 0 15px 0;
+            font-size: 1.8rem;
+        }
+        .project-main p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: var(--black);
+            margin-bottom: 15px;
+        }
+        .project-right {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .project-sidebar {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+            height: fit-content;
+        }
+        .project-sidebar h3 {
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+        }
+        .fact-item {
+            margin-bottom: 20px;
+        }
+        .fact-item span {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--brown);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .fact-item p {
+            font-size: 1rem;
+            color: var(--black);
+        }
+        .pdf-preview-container {
+            margin-top: 40px;
+            background: var(--white);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+        }
+        @media (max-width: 768px) {
+            .project-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">FLM.</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PROJECT HEADER -->
+    <header class="project-header">
+        <div>
+            <h1>Personal Growth Magazine</h1>
+            <p>An Editorial Look Into College Life, Technology, and Self-Discipline</p>
+        </div>
+    </header>
+
+    <!-- PROJECT CONTENT -->
+    <div class="project-container">
+        <!-- Left Column: Main Content -->
+        <div class="project-main">
+            <h2 style="margin-top: 0;">Overview</h2>
+            <p>This self-authored digital editorial magazine serves as a personal reflection on my journey as a Computer Science student. It captures a candid snapshot of college life, balancing technical exploration in software development with the physical discipline found in fitness and gym training. Beyond structured routines and academic expectations, the publication explores what it means to find one's own path, embrace consistency, and shape a future that genuinely aligns with personal values.</p>
+
+            <h2>What I Learned</h2>
+            <p>Crafting this publication gave me the opportunity to expand my skills in visual communication, digital publishing, and editorial layout design. I learned how to structure compelling visual stories through intentional typography, cohesive color palettes, and balanced spacing.</p>
+            <p>On a personal level, putting this project together reminded me of the importance of self-reflection. It reinforced the idea that personal growth does not follow a strict script—it is built through daily habits, patience, and staying open to learning both inside and outside the traditional classroom.</p>
+
+            <!-- PDF Preview Section -->
+            <div class="pdf-preview-container">
+                <h3 style="color: var(--primary-orange); margin-bottom: 15px; font-size: 1.5rem;">Magazine Preview & Download</h3>
+                <p>You can preview the full magazine pages below or download a copy for offline reading.</p>
+                
+                <iframe src="Faisal L. Mohammad - Personal Magazine Cover & Spread.pdf" width="100%" height="550px" style="border: 2px solid var(--bg-light); border-radius: 12px; margin-top: 15px; margin-bottom: 20px;"></iframe>
+                
+                <div style="text-align: center;">
+                    <a href="Faisal L. Mohammad - Personal Magazine Cover & Spread.pdf" download class="project-link" style="display: inline-block; padding: 12px 30px; background-color: var(--primary-orange); color: var(--white); border-radius: 8px; text-decoration: none; font-weight: 700;">Download Magazine PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Project Facts Sidebar -->
+        <div class="project-right">
+            <aside class="project-sidebar">
+                <h3>Project Facts</h3>
+                
+                <div class="fact-item">
+                    <span>Category</span>
+                    <p>Editorial Design & Digital Publishing</p>
+                </div>
+                
+                <div class="fact-item">
+                    <span>Date</span>
+                    <p>September 2026</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>My Role</span>
+                    <p>Content Creator, Writer, & Layout Designer</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>Tools Used</span>
+                    <p>Design Software & Typography Tools</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>Status</span>
+                    <p>Completed Personal Project</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Faisal L. Mohammad. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
