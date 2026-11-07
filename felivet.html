@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Felivet Insight | Faisal L. Mohammad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Specific layout for the Project Details Page */
+        .project-header {
+            background-color: var(--bg-light);
+            padding: 60px 10%;
+            text-align: center;
+            border-bottom: 4px solid var(--light-orange);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 15px;
+        }
+        .project-header h1 {
+            color: var(--primary-orange);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .project-container {
+            display: flex;
+            gap: 50px;
+            padding: 60px 10%;
+            flex-wrap: wrap;
+        }
+        .project-main {
+            flex: 2;
+            min-width: 300px;
+        }
+        .project-main h2 {
+            color: var(--brown);
+            margin: 30px 0 15px 0;
+            font-size: 1.8rem;
+        }
+        .project-main ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .project-main li {
+            margin-bottom: 8px;
+        }
+        .project-sidebar {
+            flex: 1;
+            min-width: 280px;
+            background: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+            height: fit-content;
+        }
+        .project-sidebar h3 {
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+        }
+        .fact-item {
+            margin-bottom: 20px;
+        }
+        .fact-item span {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--brown);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .fact-item p {
+            font-size: 1rem;
+            color: var(--black);
+        }
+        @media (max-width: 768px) {
+            .project-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">FLM.</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PROJECT HEADER -->
+    <header class="project-header">
+        <img src="Gemini_Generated_Image_oe7kj6oe7kj6oe7k.jpg" alt="Felivet Insight Logo" style="width: 120px; height: 120px; border-radius: 25px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);">
+        <div>
+            <h1>Felivet Insight</h1>
+            <p>AI-Powered Feline Skin Disease Detection</p>
+        </div>
+    </header>
+
+    <!-- PROJECT CONTENT -->
+    <div class="project-container">
+        <!-- Left Column: Main Content -->
+        <div class="project-main">
+            <div style="display: flex; gap: 30px; align-items: flex-start; flex-wrap: wrap; margin-bottom: 30px;">
+                <div style="flex: 1; min-width: 300px;">
+                    <h2 style="margin-top: 0;">Overview</h2>
+                    <p>FeliVet Insight is an AI-powered mobile application that uses YOLO11n to detect ringworm, scabies, and flea allergy dermatitis in cats. It provides detection results, confidence scores, and preliminary triage guidance to help cat owners assess their pets' skin conditions.</p>
+                </div>
+                <div style="flex-shrink: 0; text-align: center;">
+                    <img src="image_84e262.png" alt="Felivet UI" style="max-width: 250px; border-radius: 20px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);">
+                </div>
+            </div>
+
+            <h2>Main Features of the Application</h2>
+            <p>The application incorporates several functions to support preliminary feline skin disease assessment:</p>
+            <ul>
+                <li><strong>Image Capture and Upload</strong> – Allows users to take photographs of their cat's affected skin using the smartphone camera or select existing images from the gallery.</li>
+                <li><strong>AI-Based Disease Detection</strong> – Uses YOLO11n to detect and classify three selected feline skin diseases:
+                    <ul>
+                        <li>Ringworm</li>
+                        <li>Scabies</li>
+                        <li>Flea Allergy Dermatitis</li>
+                    </ul>
+                </li>
+                <li><strong>Confidence Score</strong> – Displays the model's confidence value for each detected skin condition.</li>
+                <li><strong>Preliminary Triage Classification</strong> – Categorizes the apparent urgency of the condition into three levels:
+                    <ul>
+                        <li>Stable – Indicates a condition with a lower apparent level of urgency.</li>
+                        <li>Moderate – Indicates a condition that may require veterinary attention.</li>
+                        <li>High – Indicates a condition with a higher apparent level of urgency.</li>
+                    </ul>
+                </li>
+                <li><strong>Non-Diagnostic Guidance</strong> – Provides preliminary information to help cat owners understand the appropriate level of care to consider.</li>
+            </ul>
+
+            <h2>My Contribution</h2>
+            <p>Responsible for designing and developing the application's user interface, implementing front-end functionalities, and ensuring a user-friendly experience through clear navigation, accessible layouts, and responsive design.</p>
+
+            <h2>What I learned</h2>
+            <p>I learned how to design and develop user interfaces, improve navigation and user experience, and connect front-end components with application functionalities. I also gained experience in teamwork, problem-solving, and applying my programming skills to a real-world project.</p>
+        </div>
+
+        <!-- Right Column: Project Facts Sidebar -->
+        <aside class="project-sidebar">
+            <h3>Project Facts</h3>
+            
+            <div class="fact-item">
+                <span>Institution</span>
+                <p>City College of Calamba</p>
+            </div>
+            
+            <div class="fact-item">
+                <span>Date</span>
+                <p>2026</p>
+            </div>
+
+            <div class="fact-item">
+                <span>My Role</span>
+                <p>UI/UX Design, Front-End Development</p>
+            </div>
+
+            <div class="fact-item">
+                <span>Technologies</span>
+                <p>YOLOv11, Front-End Frameworks</p>
+            </div>
+
+            <div class="fact-item">
+                <span>Live Demo</span>
+                <p>Not available</p>
+            </div>
+
+            <div class="fact-item">
+                <span>Source Code</span>
+                <p>Not publicly available</p>
+            </div>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Faisal L. Mohammad. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
