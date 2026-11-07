@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me | Faisal L. Mohammad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .about-hero {
+            padding: 60px 10% 40px 10%;
+        }
+        .about-subtitle {
+            font-size: 0.9rem;
+            color: var(--brown);
+            font-weight: 700;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .about-subtitle::before {
+            content: "";
+            display: inline-block;
+            width: 25px;
+            height: 3px;
+            background-color: var(--primary-orange);
+        }
+        .about-hero h1 {
+            color: var(--primary-orange);
+            font-size: 3rem;
+            margin-bottom: 15px;
+            max-width: 800px;
+            line-height: 1.2;
+        }
+        .about-hero p {
+            color: var(--black);
+            font-size: 1.1rem;
+            max-width: 700px;
+            line-height: 1.6;
+            margin-bottom: 50px;
+        }
+        .about-layout {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            padding: 0 10% 60px 10%;
+        }
+        .about-main-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        .about-card {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+        }
+        .about-card-title {
+            font-size: 0.85rem;
+            color: var(--brown);
+            font-weight: 700;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .about-card p {
+            color: var(--black);
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+        .quick-facts-box {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+            height: fit-content;
+        }
+        .quick-facts-box h3 {
+            color: var(--primary-orange);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+        .quick-facts-box ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .quick-facts-box li {
+            color: var(--black);
+            font-size: 0.95rem;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--bg-light);
+            line-height: 1.5;
+        }
+        .quick-facts-box li:last-child {
+            border-bottom: none;
+        }
+        .cv-section {
+            padding: 0 10% 80px 10%;
+        }
+        .cv-card {
+            background: var(--white);
+            padding: 40px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .cv-card h3 {
+            color: var(--primary-orange);
+            font-size: 2rem;
+            margin-bottom: 5px;
+        }
+        .cv-card p {
+            color: var(--brown);
+            font-size: 0.95rem;
+        }
+        .download-btn {
+            background-color: var(--primary-orange);
+            color: var(--white);
+            padding: 12px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background 0.3s ease;
+        }
+        .download-btn:hover {
+            background-color: var(--brown);
+        }
+        @media (max-width: 900px) {
+            .about-layout {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">FLM.</div>
+        <ul class="nav-links">
+            <li><a href="about.html" style="color: var(--primary-orange);">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="education.html">Education</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- ABOUT HERO -->
+    <section class="about-hero">
+        <div class="about-subtitle">About Me</div>
+        <h1>A Computer Science student who learns by building.</h1>
+        <p>I'm a third-year BSCS student at City College of Calamba, Philippines, focused on turning classroom concepts into working applications and digital experiences.</p>
+    </section>
+
+    <!-- ABOUT GRID LAYOUT -->
+    <div class="about-layout">
+        
+        <!-- LEFT MAIN CARDS -->
+        <div class="about-main-cards">
+            
+            <div class="about-card">
+                <div class="about-card-title">— 01 · BACKGROUND</div>
+                <p>I'm a third-year Bachelor of Science in Computer Science student at City College of Calamba, Philippines. I'm deeply curious about software development, artificial intelligence, and how technology impacts everyday life. I'm still early in my career, and I'm comfortable saying so.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card-title">— 02 · TRAINING & SKILLS</div>
+                <p>I hold a TESDA Mechatronics Servicing NC II qualification and have completed technical training in Cisco Cybersecurity & Operating Systems. Alongside systems, I practice graphic design, motion graphics, and freelance video editing using modern digital tools.</p>
+            </div>
+
+            <div class="about-card">
+                <div class="about-card-title">— 03 · DEVELOPMENT & PROJECTS</div>
+                <p>My work spans from building AI-powered mobile apps (like FeliVet Insight using YOLOv11) to developing web applications (Brew Haven Café), editorial magazine designs, and data science analytics using Orange Data Mining.</p>
+            </div>
+
+        </div>
+
+        <!-- RIGHT QUICK FACTS -->
+        <div class="quick-facts-box">
+            <h3>Quick facts</h3>
+            <ul>
+                <li><strong>Degree:</strong> Third-year BSCS student</li>
+                <li><strong>Institution:</strong> City College of Calamba</li>
+                <li><strong>Credentials:</strong> TESDA Mechatronics NC II Passer</li>
+                <li><strong>Training:</strong> Cisco Networking Academy (Cybersecurity & OS)</li>
+                <li><strong>Location:</strong> Calamba City, Laguna, Philippines</li>
+                <li><strong>Focus:</strong> Software Development & AI Integration</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- CV DOWNLOAD SECTION -->
+    <section class="cv-section">
+        <div class="cv-card">
+            <div>
+                <h3>Download my CV</h3>
+                <p>PDF · Updated 2026</p>
+            </div>
+            <a href="#" download class="download-btn">Download CV (PDF)</a>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-left">
+            <h3>Faisal L. Mohammad</h3>
+            <p>Computer Science Student · City College of Calamba, Philippines</p>
+            <p class="copyright">&copy; 2026 Faisal L. Mohammad. Built with HTML, CSS and vanilla JavaScript.</p>
+        </div>
+        <ul class="footer-links">
+            <li><a href="education.html">Education</a></li>
+            <li><a href="index.html#pro
+            <li><a href="about.html">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>jects">Projects</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </footer>
+</body>
+</html>
