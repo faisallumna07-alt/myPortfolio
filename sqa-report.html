@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software Quality Assurance Inspection | Faisal L. Mohammad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-header {
+            background-color: var(--bg-light);
+            padding: 60px 10%;
+            text-align: center;
+            border-bottom: 4px solid var(--light-orange);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 15px;
+        }
+        .project-header h1 {
+            color: var(--primary-orange);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .project-container {
+            display: flex;
+            gap: 50px;
+            padding: 60px 10%;
+            flex-wrap: wrap;
+        }
+        .project-main {
+            flex: 2;
+            min-width: 300px;
+        }
+        .project-main h2 {
+            color: var(--brown);
+            margin: 30px 0 15px 0;
+            font-size: 1.8rem;
+        }
+        .project-main p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: var(--black);
+            margin-bottom: 15px;
+        }
+        .project-main ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .project-main li {
+            margin-bottom: 8px;
+            color: var(--black);
+            line-height: 1.5;
+        }
+        .project-right {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .project-sidebar {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+            height: fit-content;
+        }
+        .project-sidebar h3 {
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+        }
+        .fact-item {
+            margin-bottom: 20px;
+        }
+        .fact-item span {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--brown);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .fact-item p {
+            font-size: 1rem;
+            color: var(--black);
+        }
+        .pdf-preview-container {
+            margin-top: 40px;
+            background: var(--white);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+        }
+        @media (max-width: 768px) {
+            .project-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">FLM.</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PROJECT HEADER -->
+    <header class="project-header">
+        <div>
+            <h1>Software Quality Assurance Inspection</h1>
+            <p>An Evidence-Based SQA Review and Rework of the Brew Haven Café Web Application</p>
+        </div>
+    </header>
+
+    <!-- PROJECT CONTENT -->
+    <div class="project-container">
+        <!-- Left Column: Main Content -->
+        <div class="project-main">
+            <h2 style="margin-top: 0;">Overview</h2>
+            <p>This evidence-based Software Quality Assurance (SQA) inspection provides a rigorous critical analysis of my own frontend software artifact—the <strong>Brew Haven Café Website</strong>[cite: 24]. Rather than treating code completion as the final step, this assessment evaluates the application's authentication logic, data integrity, pricing consistency, and mobile responsiveness under realistic user conditions[cite: 24, 25].</p>
+            <p>The inspection uncovered critical insights, including false-positive feedback loops in mock user authentication, hidden commerce entry points on mobile viewports due to CSS nesting, and decoupled pricing sources prone to synchronization drift[cite: 30, 31]. Following the inspection, systematic code reweworks and regression testing were performed to resolve these structural defects[cite: 38, 44].</p>
+
+            <h2>Key Inspection Findings</h2>
+            <ul>
+                <li><strong>Authentication Logic Gap:</strong> Discovered that the sign-in handler accepted any input without verifying credentials, issuing a false-positive success notification[cite: 28, 30].</li>
+                <li><strong>Responsive Design Flaw:</strong> Identified that nested navigation commerce actions (`.nav-actions`) were inadvertently hidden on smaller viewports (`≤992px`) when collapsing the main menu[cite: 27, 31].</li>
+                <li><strong>Pricing Inconsistency Risk:</strong> Noted that product prices were hardcoded separately in HTML labels and inline function calls, creating vulnerability to data drift during promotional updates[cite: 29, 31].</li>
+            </ul>
+
+            <h2>What I Learned</h2>
+            <p>Conducting this SQA review shifted my perspective on software development significantly. I realized that writing code that merely "works on the surface" is insufficient; code must be maintainable, logically sound, and thoroughly tested against edge cases.</p>
+            <p>Through the rework phases—such as centralizing pricing data using integer centavos, implementing robust PHP-style currency formatting (`Intl.NumberFormat`), and restoring mobile accessibility via a dedicated navigation toggle—I gained hands-on experience in deficit tracking, defensive programming, and rigorous regression validation[cite: 38, 44].</p>
+
+            <!-- PDF Preview Section -->
+            <div class="pdf-preview-container">
+                <h3 style="color: var(--primary-orange); margin-bottom: 15px; font-size: 1.5rem;">Inspection Report Preview & Download</h3>
+                <p>You can preview the complete 23-page SQA activity report below or download a copy for detailed reading.</p>
+                
+                <iframe src="Mohammad_ActivityMidtermLesosn1.pdf" width="100%" height="550px" style="border: 2px solid var(--bg-light); border-radius: 12px; margin-top: 15px; margin-bottom: 20px;"></iframe>
+                
+                <div style="text-align: center;">
+                    <a href="Mohammad_ActivityMidtermLesosn1.pdf" download class="project-link" style="display: inline-block; padding: 12px 30px; background-color: var(--primary-orange); color: var(--white); border-radius: 8px; text-decoration: none; font-weight: 700;">Download SQA Report PDF</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Project Facts Sidebar -->
+        <div class="project-right">
+            <aside class="project-sidebar">
+                <h3>Project Facts</h3>
+                
+                <div class="fact-item">
+                    <span>Subject</span>
+                    <p>Software Quality Assurance</p>
+                </div>
+                
+                <div class="fact-item">
+                    <span>Institution</span>
+                    <p>City College of Calamba (III-CS3)</p>
+                </div>
+                
+                <div class="fact-item">
+                    <span>Date</span>
+                    <p>September 19, 2026</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>My Role</span>
+                    <p>Programmer & SQA Reviewer</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>Artifact</span>
+                    <p>Brew Haven Café Website</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>Status</span>
+                    <p>Completed Anti-AI Assessment</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Faisal L. Mohammad. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
