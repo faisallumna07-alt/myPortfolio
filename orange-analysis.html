@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Attrition & Stress Analysis | Faisal L. Mohammad</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-header {
+            background-color: var(--bg-light);
+            padding: 60px 10%;
+            text-align: center;
+            border-bottom: 4px solid var(--light-orange);
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            gap: 15px;
+        }
+        .project-header h1 {
+            color: var(--primary-orange);
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+        .project-container {
+            display: flex;
+            gap: 50px;
+            padding: 60px 10%;
+            flex-wrap: wrap;
+        }
+        .project-main {
+            flex: 2;
+            min-width: 300px;
+        }
+        .project-main h2 {
+            color: var(--brown);
+            margin: 30px 0 15px 0;
+            font-size: 1.8rem;
+        }
+        .project-main p {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: var(--black);
+            margin-bottom: 15px;
+        }
+        .project-main ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+        .project-main li {
+            margin-bottom: 8px;
+            color: var(--black);
+            line-height: 1.5;
+        }
+        .project-right {
+            flex: 1;
+            min-width: 280px;
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+        .project-sidebar {
+            background: var(--white);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+            height: fit-content;
+        }
+        .project-sidebar h3 {
+            color: var(--primary-orange);
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+        }
+        .fact-item {
+            margin-bottom: 20px;
+        }
+        .fact-item span {
+            display: block;
+            font-size: 0.9rem;
+            color: var(--brown);
+            font-weight: 700;
+            margin-bottom: 4px;
+        }
+        .fact-item p {
+            font-size: 1rem;
+            color: var(--black);
+        }
+        .preview-container {
+            margin-top: 40px;
+            background: var(--white);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 6px 20px rgba(139, 83, 18, 0.08);
+            border: 2px solid var(--light-orange);
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .project-container {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">FLM.</div>
+        <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#skills">Skills</a></li>
+            <li><a href="index.html#projects">Projects</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- PROJECT HEADER -->
+    <header class="project-header">
+        <div>
+            <h1>Student Attrition & Stress Analysis</h1>
+            <p>Data Mining & Visual Exploration of Student Performance Using Orange Data Mining</p>
+        </div>
+    </header>
+
+    <!-- PROJECT CONTENT -->
+    <div class="project-container">
+        <!-- Left Column: Main Content -->
+        <div class="project-main">
+            <h2 style="margin-top: 0;">Overview</h2>
+            <p>This project utilizes <strong>Orange Data Mining</strong> to analyze a comprehensive student dataset (`LAB-ACT-1_DATASET.csv`) containing records on student demographics, study habits, attendance rates, GPAs, stress levels, and dropout status[cite: 44, 45]. The primary goal of this data workflow is to uncover the root causes of student attrition and evaluate how academic pressure, study duration, and attendance impact academic success[cite: 45].</p>
+            <p>Using visual programming nodes such as <em>File, Edit Domain, Impute, Select Columns, Distributions,</em> and <em>Scatter Plots</em>, the workflow maps relationships between variables to isolate the strongest predictors of student dropouts[cite: 44, 45].</p>
+
+            <h2>What Was Analyzed</h2>
+            <ul>
+                <li><strong>Data Preparation & Domain Editing:</strong> Cleaned missing values using the <em>Impute</em> widget and transformed numerical target labels (0/1) into clear categorical values ("No" / "Yes") using <em>Edit Domain</em> to avoid confusion[cite: 45].</li>
+                <li><strong>Dropout Distribution:</strong> Examined student dropout rates distributed across departments and scholarship tiers[cite: 45].</li>
+                <li><strong>Attendance vs. GPA Correlation:</strong> Evaluated whether high attendance rates directly guarantee high academic standing[cite: 45].</li>
+                <li><strong>Study Hours vs. GPA Correlation:</strong> Analyzed the effectiveness of long study hours in relation to student grade point averages[cite: 45].</li>
+                <li><strong>Stress Index vs. GPA:</strong> Explored how academic strain and low GPA contribute to heightened student stress and potential attrition[cite: 45].</li>
+            </ul>
+
+            <h2>Findings & Key Insights</h2>
+            <ul>
+                <li><strong>GPA is the Primary Attrition Driver:</strong> The analysis reveals that academic performance (GPA) is the strongest indicator of student dropout. Many students struggle with low GPA despite maintaining high attendance rates[cite: 45].</li>
+                <li><strong>Study Hours Don't Guarantee Success:</strong> Scatter plot evaluations showed that long study hours do not automatically translate to high GPAs. Students who spend excessive hours studying but fail to comprehend material experience heightened frustration and dropout risks[cite: 45].</li>
+                <li><strong>The Stress-GPA Loop:</strong> Lower GPAs strongly correlate with an elevated stress index. The combination of academic struggle and high stress forms the primary catalyst for student attrition[cite: 45].</li>
+            </ul>
+
+            <h2>What I Learned</h2>
+            <p>Building this Orange workflow deepened my understanding of exploratory data analysis and visual data mining. I learned how crucial data preprocessing steps—like handling missing values and mapping categorical domains—are before generating reliable visualizations[cite: 45].</p>
+            <p>More importantly, this project highlighted that student retention efforts should focus less on superficial engagement metrics (such as mere attendance or study duration) and more on targeted academic support and mental health interventions to help students efficiently comprehend complex material[cite: 45].</p>
+
+            <!-- Workflow Preview Image -->
+            <div class="preview-container">
+                <h3 style="color: var(--primary-orange); margin-bottom: 15px; font-size: 1.5rem;">Orange Data Mining Workflow Schema</h3>
+                <p>Visual overview of the data pipeline, filtering nodes, and exploratory scatter plots.</p>
+                
+                <img src="image_78287b.png" alt="Orange Workflow Schema" style="width: 100%; border-radius: 12px; border: 2px solid var(--bg-light); margin-top: 15px; margin-bottom: 20px;">
+                
+                <div style="text-align: center;">
+                    <a href="LAB-ACT-1_DATASET.csv" download class="project-link" style="display: inline-block; padding: 12px 30px; background-color: var(--primary-orange); color: var(--white); border-radius: 8px; text-decoration: none; font-weight: 700;">Download Dataset CSV</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Column: Project Facts Sidebar -->
+        <div class="project-right">
+            <aside class="project-sidebar">
+                <h3>Project Facts</h3>
+                
+                <div class="fact-item">
+                    <span>Tool / Platform</span>
+                    <p>Orange Data Mining (Visual Programming)</p>
+                </div>
+                
+                <div class="fact-item">
+                    <span>Dataset Records</span>
+                    <p>10,000 Student Entries</p>
+                </div>
+                
+                <div class="fact-item">
+                    <span>Date</span>
+                    <p>March–May 2026</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>My Role</span>
+                    <p>Data Analyst & Workflow Designer</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>Focus Area</span>
+                    <p>Predictive Attrition & Stress Analytics</p>
+                </div>
+
+                <div class="fact-item">
+                    <span>Status</span>
+                    <p>Completed Laboratory Activity</p>
+                </div>
+            </aside>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Faisal L. Mohammad. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
