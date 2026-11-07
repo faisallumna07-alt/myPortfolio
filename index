@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faisal L. Mohammad | Portfolio</title>
+    <!-- Importing Poppins Font from Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+        <div class="logo">FLM.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm <span class="highlight">Faisal L. Mohammad</span></h1>
+            <h2>Computer Science Student & Freelance Video Editor</h2>
+            <p>I blend software engineering, machine learning, and digital media production to build impactful applications and engaging visual content.</p>
+            <a href="#projects" class="btn">View My Work</a>
+        </div>
+        <div class="hero-image">
+            <!-- Replace the src with your actual image path or URL -->
+            <img src="[BLANK - Insert Profile Picture URL]" alt="Faisal L. Mohammad">
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+            <p>I am a 3rd-year Bachelor of Science in Computer Science student at City College of Calamba. I specialize in applying theoretical computer science concepts—such as CPU scheduling algorithms and machine learning classifiers—to interactive applications and real-world tools. Alongside my academic work, I run a freelance video editing service, creating promotional videos and motion graphics.</p>
+        </div>
+    </section>
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="section bg-light">
+        <h2 class="section-title">My Toolkit</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <h3>Development & AI</h3>
+                <p>Python, YOLOv11, HTML/CSS/JS, Orange Data Mining, GitHub Actions (CI/CD)</p>
+            </div>
+            <div class="skill-card">
+                <h3>Game Engine & Logic</h3>
+                <p>Godot Engine, GDScript</p>
+            </div>
+            <div class="skill-card">
+                <h3>Design & Video</h3>
+                <p>Adobe Illustrator, CorelDraw, GIMP, Video Editing, Motion Graphics</p>
+            </div>
+            <div class="skill-card">
+                <h3>[BLANK - Add Skill Category]</h3>
+                <p>[BLANK - Add specific skills]</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="section">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Felivet Insight</h3>
+                <p>An AI-powered mobile application designed to detect feline skin diseases (ringworm, scabies, flea allergy dermatitis) utilizing YOLOv11 with triage classification.</p>
+                <a href="[BLANK - GitHub Repo Link]" class="project-link">Source Code</a>
+            </div>
+            <div class="project-card">
+                <h3>SCHED.EXE</h3>
+                <p>An educational 2D lane-based strategy game built in Godot Engine using GDScript to simulate and visualize CPU scheduling algorithms.</p>
+                <a href="[BLANK - GitHub Repo Link]" class="project-link">Source Code</a>
+            </div>
+            <div class="project-card">
+                <h3>Brewhaven</h3>
+                <p>A fully functional coffee shop landing page deployed via GitHub Pages utilizing automated GitHub Actions CI/CD workflows.</p>
+                <a href="[BLANK - Live Project Link]" class="project-link">Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="section bg-light">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-info">
+            <p><strong>Location:</strong> Calamba City, Laguna, Philippines</p>
+            <p><strong>Email:</strong> <a href="mailto:faisallumna07@gmail.com">faisallumna07@gmail.com</a></p>
+            <p><strong>Phone:</strong> 09934087398</p>
+            <div class="social-links">
+                <a href="[BLANK - Insert LinkedIn URL]">LinkedIn</a>
+                <a href="[BLANK - Insert GitHub Profile URL]">GitHub</a>
+                <a href="[BLANK - Insert Portfolio/Video Reel URL]">Video Reel</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Faisal L. Mohammad. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
